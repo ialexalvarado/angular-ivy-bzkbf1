@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+tr:hover {
+  background-color: gray;
+}
+
+th{
+  font-style: bold;
+  border-bottom:  1px solid black;
+}

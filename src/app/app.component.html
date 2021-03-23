@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let p of list_person">
+    <td>{{p.first_name}}</td>
+    <td>{{p.last_name}}</td>
+    <td><button (click)="remove_person(p.id)" >remove</button></td>
+  </tr>
+</table>
+<br>
+<form >
+  <label for="fname">First name:</label><br>
+  <input type="text" [(ngModel)]= "fname" name="first"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" [(ngModel)]= "lname" name="last"><br><br>
+  <input type="submit" value="Add" (click)="add_person()">
+</form> 
